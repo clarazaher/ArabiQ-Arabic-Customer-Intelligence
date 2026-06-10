@@ -1,0 +1,66 @@
+# =========================
+# Python environment
+# =========================
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# =========================
+# Secrets and environment variables
+# NEVER commit real API keys or passwords
+# =========================
+.env
+.env.local
+.env.*.local
+
+# =========================
+# Mac system files
+# =========================
+.DS_Store
+
+# =========================
+# Logs
+# =========================
+logs/*
+!logs/.gitkeep
+*.log
+
+# =========================
+# Raw and processed data
+# Keep folder placeholders, but do not commit datasets
+# =========================
+data/raw/*
+!data/raw/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+# We WILL allow data/rag_corpus later because it contains synthetic documents
+
+# =========================
+# Trained models and vector databases
+# These can be very large and should not go to GitHub
+# =========================
+models/ml/*
+!models/ml/.gitkeep
+
+models/nlp/*
+!models/nlp/.gitkeep
+
+models/rag/*
+!models/rag/.gitkeep
+
+# =========================
+# Deployment / local runtime files
+# =========================
+.streamlit/secrets.toml
