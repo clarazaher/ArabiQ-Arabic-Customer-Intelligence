@@ -1,3 +1,36 @@
+## Current Project Status
+
+ArabiQ currently includes three completed AI components:
+
+### Phase 1 — Customer Churn Prediction
+
+A machine learning pipeline was built to predict customer churn using the IBM Telco Customer Churn dataset. The phase includes data cleaning, feature engineering, preprocessing, model training, Optuna tuning, SHAP explainability, and a churn model card.
+
+Best selected model:
+
+- Tuned XGBoost
+- Test AUC: 0.8535
+- Recall: 0.8209
+
+### Phase 2 — Arabic Sentiment Analysis
+
+An Arabic NLP pipeline was built using the Arabic Sentiment Twitter Corpus. The phase includes dataset preparation, Arabic text preprocessing, TF-IDF baseline modeling, fast model comparison, Logistic Regression tuning, and an Arabic sentiment model card.
+
+Best selected model:
+
+- Tuned TF-IDF + Logistic Regression
+- Macro F1 used as the main evaluation metric
+
+### Phase 3 — Arabic/English Banking RAG Assistant
+
+A bilingual retrieval-based banking assistant was built using a synthetic Arabic and English banking policy corpus. The system uses multilingual sentence embeddings, ChromaDB, terminal query testing, and a Streamlit interface.
+
+The assistant supports questions such as:
+
+- What documents are needed to open a savings account?
+- How long does it take to get a replacement debit card?
+- متى تصل بطاقة الخصم البديلة؟
+- هل الموافقة على القرض الشخصي مضمونة؟
 # ArabiQ — Arabic Customer Intelligence Platform
 
 ArabiQ is an end-to-end AI and machine learning project developed as part of **Project 2 — Advansys Intelligent Solutions**.
