@@ -43,15 +43,28 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     # Leakage means columns that give the model information it would not have
     # at prediction time. This creates fake high performance.
     leakage_or_id_cols = [
+        # Direct identifiers
         "CustomerID",
+
+        # Leakage columns: not safe to use for prediction
         "Churn Score",
         "CLTV",
         "Churn Reason",
         "Churn Value",
+
+        # Constant / low-business-value columns
         "Count",
         "Country",
         "State",
+
+        # Geographic and demographic columns excluded for ethical deployment
+        "City",
+        "Zip Code",
         "Lat Long",
+        "Latitude",
+        "Longitude",
+        "Gender",
+        "Senior Citizen",
     ]
 
     existing_cols_to_drop = [col for col in leakage_or_id_cols if col in df.columns]
