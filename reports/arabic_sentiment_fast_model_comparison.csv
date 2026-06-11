@@ -1,0 +1,4 @@
+Model,Accuracy,Macro F1,Macro Precision,Macro Recall,Train Time Seconds
+TF-IDF + Logistic Regression,0.6821,0.681,0.6822,0.681,0.38
+TF-IDF + Complement Naive Bayes,0.68,0.6774,0.682,0.678,0.02
+TF-IDF + Linear SVM,0.6643,0.6639,0.664,0.6639,0.56
