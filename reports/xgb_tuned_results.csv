@@ -1,0 +1,2 @@
+Model,Best CV AUC,Test AUC,Test F1,Precision,Recall
+XGBoost Tuned,0.8656,0.8535,0.624,0.5033,0.8209
