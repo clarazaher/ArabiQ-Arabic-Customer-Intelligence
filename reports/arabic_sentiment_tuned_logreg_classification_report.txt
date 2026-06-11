@@ -1,0 +1,13 @@
+Best TF-IDF + Logistic Regression configuration
+================================================================================
+{'Model': 'TF-IDF + Tuned Logistic Regression', 'TF-IDF Config': 'char_wb_3_5_80k', 'Analyzer': 'char_wb', 'Ngram Range': '(3, 5)', 'Max Features': 80000, 'C': 1.0, 'Accuracy': 0.6821, 'Macro F1': 0.6808, 'Macro Precision': 0.6825, 'Macro Recall': 0.6808, 'Vectorization Time Seconds': 1.56, 'Train Time Seconds': 0.27}
+
+Classification report:
+              precision    recall  f1-score   support
+
+    negative       0.68      0.73      0.70      3677
+    positive       0.69      0.64      0.66      3470
+
+    accuracy                           0.68      7147
+   macro avg       0.68      0.68      0.68      7147
+weighted avg       0.68      0.68      0.68      7147
