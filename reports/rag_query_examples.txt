@@ -1,0 +1,78 @@
+RAG Query Examples
+============================================================
+
+Question: What documents are needed to open a savings account?
+
+Answer:
+Based on the retrieved banking policy, the answer is:
+
+Account Opening Policy
+
+Customers can open a savings account by submitting a valid national ID or passport, proof of address, and a completed account opening form.
+
+The minimum age for opening an individual savings account is 18 years. Customers under 18 may open a minor account with a legal guardian.
+
+The bank may request additional documents if identity verification or compliance checks require it.
+
+Source: account_opening_en.txt
+
+Retrieved sources:
+- account_opening_en.txt | distance: 16.5692
+- account_opening_ar.txt | distance: 20.1687
+
+Question: How long does it take to get a replacement debit card?
+
+Answer:
+Based on the retrieved banking policy, the answer is:
+
+Debit Card Replacement Policy
+
+If a debit card is lost, stolen, or damaged, the customer should contact the bank immediately to block the card.
+
+A replacement card can be requested through the branch, mobile banking app, or customer service hotline.
+
+Replacement fees may apply depending on the account package. The new card is usually available within 3 to 5 business days.
+
+Source: card_replacement_en.txt
+
+Retrieved sources:
+- card_replacement_en.txt | distance: 8.3603
+- card_replacement_ar.txt | distance: 12.5273
+
+Question: متى تصل بطاقة الخصم البديلة؟
+
+Answer:
+Based on the retrieved banking policy, the answer is:
+
+سياسة استبدال بطاقة الخصم
+
+إذا فقد العميل بطاقة الخصم أو تعرضت للسرقة أو التلف، يجب عليه التواصل مع البنك فوراً لإيقاف البطاقة.
+
+يمكن طلب بطاقة بديلة من خلال الفرع أو تطبيق الهاتف المحمول أو خدمة العملاء.
+
+قد يتم تطبيق رسوم استبدال حسب نوع الحساب. عادةً تكون البطاقة الجديدة متاحة خلال 3 إلى 5 أيام عمل.
+
+Source: card_replacement_ar.txt
+
+Retrieved sources:
+- card_replacement_ar.txt | distance: 7.3946
+- card_replacement_en.txt | distance: 10.8185
+
+Question: هل الموافقة على القرض الشخصي مضمونة؟
+
+Answer:
+Based on the retrieved banking policy, the answer is:
+
+سياسة القرض الشخصي
+
+تعتمد أهلية الحصول على القرض الشخصي على الدخل، وحالة العمل، والتاريخ الائتماني، وتقييم المخاطر الداخلي.
+
+يجب على العميل تقديم إثبات دخل، ومستند هوية ساري، وأي مستندات إضافية يطلبها البنك.
+
+الموافقة على القرض ليست مضمونة، ويعتمد القرار النهائي على سياسة الائتمان وقدرة العميل على السداد.
+
+Source: loan_policy_ar.txt
+
+Retrieved sources:
+- loan_policy_ar.txt | distance: 10.2819
+- loan_policy_en.txt | distance: 12.0447
