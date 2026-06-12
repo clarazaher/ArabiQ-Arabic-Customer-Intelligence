@@ -265,6 +265,46 @@ Fine-tune CAMeLBERT for Arabic sentiment analysis.
 ### Phase 3 — RAG Assistant
 
 Build an Arabic-English document question-answering assistant using embeddings, ChromaDB, and an LLM.
+## Running the RAG App with Docker
+
+The Streamlit RAG banking assistant can also be run inside Docker.
+
+### Build the Docker image
+
+```bash
+docker build -t arabiq-rag-app .
+```
+
+### Run the Docker container
+
+```bash
+docker run --rm -p 8501:8501 arabiq-rag-app
+```
+
+Then open:
+
+```text
+http://localhost:8501
+```
+
+Example questions:
+
+```text
+What documents are needed to open a savings account?
+```
+
+```text
+متى تصل بطاقة الخصم البديلة؟
+```
+
+To stop the app, return to the terminal and press:
+
+```text
+Control + C
+```
+
+The Docker image rebuilds the local Chroma vector database from the synthetic banking corpus during the build process.
+
 
 ### Phase 4 — Deployment
 
